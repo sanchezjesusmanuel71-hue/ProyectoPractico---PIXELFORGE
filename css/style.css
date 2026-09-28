@@ -1,0 +1,226 @@
+
+:root{
+    --fondoheader:#0B0F1A;
+    --azul:#00E5FF;
+    --rosado:#FF2E93;
+    --text:#8C94A4;
+    --fondobanner:#0D1324;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color:var(--fondoheader) ;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position: sticky;
+     top: 0;
+}
+
+.logo{
+    color:var(--rosado);
+    margin-left: 30px;
+}
+
+.logo span{
+    color:var(--azul) ;
+}
+
+nav ul{
+    display: flex;
+    gap:20px; 
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--text);
+}
+
+nav a:hover{
+    color: var(--azul);
+    border-bottom: solid var(--azul);
+}
+
+.banner{
+    background-color: var(--fondobanner);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    min-height: 60vh;
+    border-bottom: 1px solid #262c38;
+    border-top: 1px solid #262c38;
+}
+
+.contenido-banner{
+    text-align: center;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sudtitulo{
+    color: var(--rosado);
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+}
+
+.titulo-banner{
+    color: var(--rosado);
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.titulo-h1{
+    color: var(--azul);
+}
+
+.contenido-banner p{
+    color: var(--text);
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btns{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.btn-verJuegos{
+    display: inline-block;
+    background-color: var(--azul);
+    text-decoration: none;
+    color: var(--fondoheader);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    line-height: 40px;
+}
+
+.btn-contactos{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--rosado);
+    color: var(--rosado);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    line-height: 40px;
+
+}
+
+.nosotros{
+    background-color: var(--fondoheader);
+    display: flex;
+    flex-direction: row;
+}
+
+.info-nosotros{
+    padding: 30px 0;
+    width: 500px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info-nosotros h2{
+    color: var(--azul);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.info-nosotros p{
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resultados{
+    padding: 30px;
+    width: 500px;
+    margin-right: 15%;
+    margin-left: 10%;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.cajas{
+    background-color: var(--fondobanner);
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.cajas span{
+    font-size: 30px;
+    color: var(--rosado);
+    font-family:monospace;
+    font-weight:500;
+}
+
+.cajas p{
+    color: var(--text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.numero-resul{
+    color: var(--azul) !important; 
+}
+
+@media (max-width: 765px){
+
+    nav{
+        display: none;
+    }
+
+    .info-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .sudtitulo{
+    font-size: 18px;
+    }
+
+    .titulo-banner{
+    font-size: 60px;
+    }
+
+    .contenido-banner p{
+    font-size: 17px;
+    }
+
+    .btns{
+    gap: 35px;
+    }
+
+}
